@@ -1,11 +1,11 @@
-#install.packages("rtweet")
-#install.packages("tidytext")
-#install.packages("tidyverse")
-
-#library(rtweet)
-#library(tidytext)
-#library(tidyverse)
-#rent_tweets<-search_tweets(q = "rent+london", n=10000)
+# install.packages("rtweet")
+# install.packages("tidytext")
+# install.packages("tidyverse")
+# 
+# library(rtweet)
+# library(tidytext)
+# library(tidyverse)
+# rent_tweets<-search_tweets(q = "rent+london", n=10000)
 
 word_list<-rent_tweets %>%
   mutate(text=gsub("http|https.*","",text)) %>% 
