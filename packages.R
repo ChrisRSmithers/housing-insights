@@ -7,6 +7,7 @@
 # library(tidyverse)
 # rent_tweets<-search_tweets(q = "rent+london", n=10000)
 
+
 word_list<-rent_tweets %>%
   mutate(text=gsub("http|https.*","",text)) %>% 
   distinct(user_id, .keep_all = T) %>% 
